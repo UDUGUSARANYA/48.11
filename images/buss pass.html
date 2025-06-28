@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus pass page</title>
+</head>
+<body>
+    <center>
+        <h1><img src="./buss pass  image.jpg" width="100"><br>Telangana State Board Corporation</h1>
+        <p>Welcome to the bus pass page!</p>
+        <h1>General Bus Pass Application</h1>
+    </center>
+        <form action="./index2.html">
+            <fieldset>
+                <legend>Application Details</legend>
+                <table cellspacing="10" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                        <td>
+                            <label for="Fathername">Father's/Guardian's Name:</label>
+                            <input type="text" id="Fathername" name="Father" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </td>
+                        <td>
+                            <label for="gender">Gender</label>
+                            <input type="radio" id="Male" name="Gender" value="male" required>
+                            <label for="Male">Male</label>
+                            <input type="radio" id="gender" name="Gender" value = "female" required>
+                            <label for="Female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Age">Age as on</label>
+                            <input type="age" id="Age" name="Age" required>
+                        </td>
+                        <td>
+                            <label for="Adhar">Aadhar Number:</label>
+                            <input type="text" id="Adhar" name="Adhar" pattern="\d{12}" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="whatapp">WhatsApp Number:</label>
+                            <input type="tel" id="whatapp" name="whatapp" pattern="\d{10}" required>
+                        </td>
+                        <td>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="photo">Upload Photo:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Residential Address Details</legend>
+                <table cellspacing="10" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="Applicantaddress">Applicant Address</label>
+                            <textarea id="Applicantaddress" name="address" rows="4" cols="50"></textarea>
+                        </td>
+                        <td>
+                            <label for="district">District:</label>
+                            <select id="district" name="district" required>
+                                <option value="">Hyderabad</option>
+                                <option value="District1">Medchal</option>
+                                <option value="District2">Sanga Reddy</option>
+                                <option value="District3">Ranga Reddy</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Mandal">Mandal:</label>
+                            <select id="Mandal" name="Mandal" required>
+                                <option value="">Hyderabad</option>
+                                <option value="Mandal1">Kukatpally</option>
+                                <option value="Mandal2">Qubuthulapur</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pincode">Pincode:</label>
+                            <input type="text" id="pincode" name="pincode" pattern="\d{6}" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Bus Pass Details</legend>
+                <table cellspacing="10" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="route">City</label>
+                            <select id="route" name="route" required>
+                                <option value="">Select</option>
+                                <option value="Route1">Hyderabad</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="buspass">Bus Pass Type:</label>
+                            <select id="buspass" name="buspass" required>
+                                <option value="">Select</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Quarterly">Quarterly</option>
+                                <option value="Yearly">Yearly</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Mode of payment & Pass collection</legend>
+                <table cellspacing="10" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="payment">Mode of Payment:</label>
+                            <select id="payment" name="payment" required>
+                                <option value="">Select</option>
+                                <option value="Online">Online</option>
+                                <option value="Offline">Offline</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="collection">Pass Dilevery mode:</label>
+                            <select id="collection" name="collection" required>
+                                <option value="">Select pass Dilevery mode</option>
+                                <option value="Home Delivery">In counter</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="center">Center at which you want to collect</label>
+                            <select id="center" name="center" required>
+                                <option value="">Select</option>
+                                <option value="Center1">Kukatpally</option>
+                                <option value="Center2">Qubuthulapur</option>
+                                <option value="Center3">Malkajgiri</option>
+                                <option value="Center4">LB nagar</option>
+                                <option value="Center5">Miyapur</option>
+                                <option value="Center6">Ameerpet</option>
+                                <option value="Center7">Jubilee Hills</option>
+                                <option value="Center8">Banjara Hills</option>
+                                <option value="Center9">Secunderabad</option>
+                                <option value="Center10">Madhapur</option>
+                                <option value="Center11">Gachibowli</option>
+                                <option value="Center12">Hitech City</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <center><img src="./captcha.jpg" id="captcha" alt="Captcha Image" width="200" height="100"><br>
+            <input type="text" id="captcha" name="captcha" placeholder="Enter Captcha" required>
+            <br>
+            <input type="submit" value="Submit">
+        </center>
+        </form>
+            
+</body>
+</html>
